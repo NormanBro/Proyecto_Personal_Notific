@@ -1,0 +1,27 @@
+<div class="Content">
+    <div class="Box-Title">
+        <h2>Administrar Usuarios</h2>
+        <div>
+            <button (click)="OpenAddUsers()">Agregar</button>
+        </div>
+    </div>
+
+    <table class="Box-Table">
+        <tr>
+            <th>Clave</th>
+            <th>Nombres</th>
+            <th>Opciones</th>
+        </tr>
+        <tr *ngFor="let user of srv">
+            <td>{{user.IDUsuario}}</td>
+            <td>{{user.Nombre}}</td>
+            <td>
+                <div class="Option">
+                    <img src="/assets/editar.png" alt="" width="28px" height="28px">
+                    <img src="/assets/borrar.png" alt="" width="28px" height="28px">
+                </div>
+            </td>
+        </tr>
+    </table>
+
+</div>

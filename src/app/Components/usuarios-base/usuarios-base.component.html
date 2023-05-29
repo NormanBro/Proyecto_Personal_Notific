@@ -1,0 +1,13 @@
+<app-bar-home></app-bar-home>
+<div class="Content">
+    <div class="Box-Button">
+        <button (click)="OnBack()">
+            <img src="/assets/regreso.png" alt="" height="40px" width="40px">
+            Regresar
+        </button>
+    </div>
+    
+    <div class="Box-Table">
+        <app-usuario-tabla [Data]="Usuarios"></app-usuario-tabla>
+    </div>
+</div>

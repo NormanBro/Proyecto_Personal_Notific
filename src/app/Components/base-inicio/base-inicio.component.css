@@ -1,0 +1,29 @@
+.Content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+.Content .Box-Home{
+    width: 1450px;
+    background-color: var(--border-bg);
+    color: white;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+.Content .Box-Home h2{
+    text-align: center;
+    margin: 20px;
+    font-size: 38px;
+}
+.Content .Box-Home .Box-Menu{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    gap: 40px;
+}
+@media (min-width:750px) {
+    .Content .Box-Home{
+        margin: 0 50px;
+    }
+}

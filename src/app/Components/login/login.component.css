@@ -1,0 +1,48 @@
+.Form-Class{
+    background-color: whitesmoke;
+    width: 540px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: 20px;
+    border-left: 15px solid var(--border-bg);
+    border-bottom: 10px solid var(--border-bg);
+}
+
+.Form-Class h2{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 38px;
+}
+
+.Form-Class p,
+.Form-Class input{
+    margin: 10px 80px;
+}
+
+.Form-Class p{
+    font-size: 28px;
+}
+.Form-Class input[type='text']{
+    padding: 0 10px;
+    height: 40px;
+    border: none;
+    font-size: 24px;
+    border-radius: 20px;
+}
+
+.Form-Class button{
+    background-color: var(--color-btn-susses);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    height: 60px;
+    width: 210px;
+    font-size: 28px;
+    margin: 10px 80px;
+}
+@media (max-width: 900px){
+    .Form-Class{
+        border-top-right-radius: 20px;
+    }
+}

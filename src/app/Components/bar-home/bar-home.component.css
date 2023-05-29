@@ -1,0 +1,55 @@
+.Box-Header{
+    display: flex;
+    width: 100%;
+    background-color: var(--color-bg-tag-two);
+    color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+}
+.Box-Header .Box-Logo{
+    width: 100%;
+    display: flex;
+}
+.Box-Header .Box-Logo img{
+    margin: 15px;
+    width: 100px;
+    height: 100px;
+}
+.Box-Header .Box-Logo span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    font-size: 24px;
+}
+.Box-Header .Box-Users{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.Box-Header .Box-Users .Users img{
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+
+}
+.Box-Header .Box-Users .Users{
+    margin: 10px;
+    cursor: pointer;
+}
+.Box-Header .Box-Users .Users p{
+    margin: 0 15px;
+}
+
+@media (max-width:750px){
+    .Box-Header .Box-Logo img{
+        width: 90px;
+        height: 90px;
+    }
+    .Box-Header .Box-Users .Users img{
+        width: 60px;
+        height: 60px;
+    }
+}
