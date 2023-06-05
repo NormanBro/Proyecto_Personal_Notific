@@ -16,6 +16,7 @@ export class DialogAddUsersComponent implements OnInit {
   UniAcademic:any;
   Departamento:any;
   Car:any;
+  
   FormAddUsers!:FormGroup;
 
   constructor(

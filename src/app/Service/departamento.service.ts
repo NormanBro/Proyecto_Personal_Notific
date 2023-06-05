@@ -7,9 +7,13 @@ import { HttpClient } from '@angular/common/http';
 })
 export class DepartamentoService {
   private API_REF="/API/GET/Departamento"
+  private API_POST="/API/POST/Departamento"
   constructor(private http:HttpClient) { }
 
   GetAllDepartamento():Observable<any>{
     return this.http.get(this.API_REF);
+  }
+  PostDepartamento(Body:Observable<any>){
+    return this.http.post(this.API_POST,Body);
   }
 }

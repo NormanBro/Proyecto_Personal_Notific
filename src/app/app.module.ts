@@ -23,7 +23,10 @@ import { DialogAddUnidadComponent } from './Components/dialog-add-unidad/dialog-
 import { DialogAddCarreraComponent } from './Components/dialog-add-carrera/dialog-add-carrera.component';
 import { DialogAddDepartamentoComponent } from './Components/dialog-add-departamento/dialog-add-departamento.component';
 
-import { MatDialogModule } from '@angular/material/dialog'
+import { MatDialogModule } from '@angular/material/dialog';
+import { NotificacionBaseComponent } from './Components/notificacion-base/notificacion-base.component';
+import { NotificacionTablaComponent } from './Components/notificacion-tabla/notificacion-tabla.component';
+import { DialogAddNotificacionComponent } from './Components/dialog-add-notificacion/dialog-add-notificacion.component'
 
 @NgModule({
   declarations: [
@@ -43,7 +46,10 @@ import { MatDialogModule } from '@angular/material/dialog'
     DialogAddUsersComponent,
     DialogAddUnidadComponent,
     DialogAddCarreraComponent,
-    DialogAddDepartamentoComponent
+    DialogAddDepartamentoComponent,
+    NotificacionBaseComponent,
+    NotificacionTablaComponent,
+    DialogAddNotificacionComponent
   ],
   imports: [
     BrowserModule,

@@ -1,24 +1,26 @@
 <div class="Content">
     <div class="Box-Title">
-        <h2>Departamentos</h2>
+        <h2>Administrar Usuarios</h2>
         <div>
-            <button (click)="OpenAddDepart()">Agregar</button>
+            <button (click)="OpenAddNotificacion()">Agregar</button>
         </div>
     </div>
 
     <table class="Box-Table">
         <tr>
             <th>Clave</th>
-            <th>Nombres</th>
+            <th>Titulo</th>
             <th>Descripcion</th>
-            <th>Encargado</th>
+            <th>Fecha</th>
+            <th>Visitas</th>
             <th>Opciones</th>
         </tr>
-        <tr *ngFor="let Dato of Datos">
-            <td>{{Dato.IDDepartamento}}</td>
-            <td>{{Dato.Nombre}}</td>
-            <td>{{Dato.Descripcion}}</td>
-            <td>{{Dato.Encargado}}</td>
+        <tr *ngFor="let noti of srv">
+            <td>{{noti.IDNotificacion}}</td>
+            <td>{{noti.Titulo}}</td>
+            <td>{{noti.Descripcion}}</td>
+            <td>{{noti.Fecha}}</td>
+            <td>{{noti.Visitas}}</td>
             <td>
                 <div class="Option">
                     <img src="/assets/editar.png" alt="" width="28px" height="28px">

@@ -1,7 +1,7 @@
 import { Component,Input } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog'
 import { DialogAddUsersComponent } from '../dialog-add-users/dialog-add-users.component';
-import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-usuario-tabla',
@@ -12,8 +12,7 @@ export class UsuarioTablaComponent {
   @Input('Data') srv:any;  
 
   constructor(
-    private Dialog:MatDialog,
-    private router:Router
+    private Dialog:MatDialog
     
     ){}
   OpenAddUsers(){

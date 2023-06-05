@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { UniAcademicaService } from 'src/app/Service/uni-academica.service';
 
+
 @Component({
   selector: 'app-uniaca-base',
   templateUrl: './uniaca-base.component.html',
@@ -10,10 +11,12 @@ import { UniAcademicaService } from 'src/app/Service/uni-academica.service';
 })
 export class UniacaBaseComponent {
   UnidadAcademic:any={};
+
   constructor(
     private uniaca:UniAcademicaService,
     private router:Router,
     private local:Location
+    
   ){
     this.uniaca.GetAllUnidadAcademic().subscribe(uni=>{
       this.UnidadAcademic=uni;

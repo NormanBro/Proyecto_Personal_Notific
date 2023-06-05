@@ -6,6 +6,7 @@ import { UsuariosBaseComponent } from './Components/usuarios-base/usuarios-base.
 import { UniacaBaseComponent } from './Components/uniaca-base/uniaca-base.component';
 import { CarreraBaseComponent } from './Components/carrera-base/carrera-base.component';
 import { DepartamentosBaseComponent } from './Components/departamentos-base/departamentos-base.component';
+import { NotificacionBaseComponent } from './Components/notificacion-base/notificacion-base.component';
 
 const routes: Routes = [
   {path:"",component:LoginBaseComponent},
@@ -14,7 +15,7 @@ const routes: Routes = [
   {path:"UnidadAcademica",component:UniacaBaseComponent},
   {path:"Carrera",component:CarreraBaseComponent},
   {path:"Departamento",component:DepartamentosBaseComponent},
-  
+  {path:"Notificacion",component:NotificacionBaseComponent}  
 
 ];
 

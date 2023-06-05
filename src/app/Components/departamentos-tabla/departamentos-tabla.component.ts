@@ -1,4 +1,6 @@
 import { Component,Input } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { DialogAddDepartamentoComponent } from '../dialog-add-departamento/dialog-add-departamento.component';
 
 @Component({
   selector: 'app-departamentos-tabla',
@@ -7,4 +9,12 @@ import { Component,Input } from '@angular/core';
 })
 export class DepartamentosTablaComponent {
   @Input('Data') Datos:any;
+  constructor(
+    private Dialog:MatDialog
+  ){}
+  OpenAddDepart(){
+    this.Dialog.open(DialogAddDepartamentoComponent,{
+      width:"50%"
+    })
+  }
 }

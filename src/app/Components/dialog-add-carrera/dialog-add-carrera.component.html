@@ -1,1 +1,21 @@
-<p>dialog-add-carrera works!</p>
+<div class="Content-Dialog">
+    <h2>Añadir Carrera</h2>
+    <form action="" class="Form-Dialog" [formGroup]="FormAddCarrera" (submit)="OnSumbitAddCarrera()">
+        <p>Nombre:</p>
+        <input type="text" name="" id="" formControlName="Nombre">
+        <p>Descripcion:</p>
+        <!--input type="text" name="" id="" formControlName="Descripcion"-->
+        <textarea name="" id="" cols="30" rows="10" formControlName="Descripcion"></textarea>
+        <p>Encargado:</p>
+        <input type="text" name="" id="" formControlName="Encargado">
+        <div class="Dialog-Opcion">
+            <p>Unidad Academica:</p>
+            <select name="lenguajes" id="lang" formControlName="IDUniAcademica">
+                <option value="{{Datos.IDUniAcademica}}" *ngFor="let Datos of UniAcademic">{{Datos.Nombre}}</option>
+            </select>
+        </div>
+        <div class="pos-end">
+            <Button>Aceptar</Button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,14 @@
+<div class="Content-Dialog">
+    <h2>Añadir Notificacion</h2>
+    <form action="" class="Form-Dialog" [formGroup]="FormAddNotificacion" (submit)="OnSumbitAddNotificacion()">
+        <p>Titulo:</p>
+        <input type="text" name="" id="" formControlName="Titulo">
+
+        <p>Descripcion:</p>
+        <textarea name="" id="" cols="50" rows="10" formControlName="Descripcion"></textarea>
+        
+        <div class="pos-end">
+            <Button>Aceptar</Button>
+        </div>
+    </form>
+</div>
